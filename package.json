@@ -1,0 +1,20 @@
+{
+  "name": "fullstack_assignment1",
+  "version": "1.0.0",
+  "description": "this is an assignment for a fullstack course offered as part of the George Brown College curriculum. The assignmnet uses MEAN stack",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/creigPhiri/fullstack_assignment1.git"
+  },
+  "author": "Fortune Creig Phiri",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/creigPhiri/fullstack_assignment1/issues"
+  },
+  "homepage": "https://github.com/creigPhiri/fullstack_assignment1#readme"
+}
