@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/creigPhiri/fullstack_assignment1/issues"
   },
-  "homepage": "https://github.com/creigPhiri/fullstack_assignment1#readme"
+  "homepage": "https://github.com/creigPhiri/fullstack_assignment1#readme",
+  "dependencies": {
+    "express": "^4.16.4"
+  }
 }
