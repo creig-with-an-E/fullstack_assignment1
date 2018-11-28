@@ -18,6 +18,8 @@
   },
   "homepage": "https://github.com/creigPhiri/fullstack_assignment1#readme",
   "dependencies": {
-    "express": "^4.16.4"
+    "ejs": "^2.6.1",
+    "express": "^4.16.4",
+    "mongoose": "^5.3.14"
   }
 }
