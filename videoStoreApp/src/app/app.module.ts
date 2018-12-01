@@ -13,6 +13,7 @@ import { CustomersadminComponent } from './customersadmin/customersadmin.compone
 import { VideolistguestComponent } from './videolistguest/videolistguest.component';
 import { ReservevideoguestComponent } from './reservevideoguest/reservevideoguest.component';
 
+
 const routes: Routes = [
   {path: 'adminlogin', component: AdminloginComponent},
   {path: 'videolistadmin', component: VideolistadminComponent},
@@ -20,7 +21,8 @@ const routes: Routes = [
   {path: 'updatevideoadmin', component: UpdatevideoadminComponent},
   {path: 'cusdtomersadmin', component: CustomersadminComponent},
   {path: 'videolistguest', component: VideolistguestComponent},
-  {path: 'reservevideoguest', component: VideolistguestComponent}
+  {path: 'reservevideoguest', component: VideolistguestComponent},
+
 
 
 
