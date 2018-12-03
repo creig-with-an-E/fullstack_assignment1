@@ -1,21 +1,70 @@
-<div class="container ">
-  <div class="row" >
-    <div class="col-md-6" style="float:none;margin: 0 auto;">
-<form>
-  <div class="form-group">
-    <label for="exampleInputEmail1">Login</label>
-    <input type="email" class="form-control" id="loginInput" aria-describedby="emailHelp" placeholder="">
-    <!--<small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>-->
-  </div>
-  <div class="form-group">
-    <label for="exampleInputPassword1">Password</label>
-    <input type="password" class="form-control" id="pwInput" placeholder="">
-  </div>
+<style>
+ .bg{
+   background:linear-gradient(#B6B9BA, cornsilk) no-repeat;
+   width: 100%;
+   height: 100vh;
 
-  <a routerLink="/videolistadmin" class="btn btn-primary col-md-6 offset-md-3">Submit
-  </a>
-</form>
-      <router-outlet></router-outlet>
+   text-align: center;
+   ;
+  }
+ .form-container{
+   border: 0px solid;
+   border-radius: 11px 11px 11px 11px;
+   -moz-border-radius: 11px 11px 11px 11px;
+   -webkit-border-radius: 11px 11px 11px 11px;
+   border: 0px hidden #000000;
+   padding:50px 60px;
+   margin-top:20vh;
+   -webkit-box-shadow: -1px 4px 26px 1px rgba(0,0,0,0.75);
+   -moz-box-shadow: -1px 4px 26px 1px rgba(0,0,0,0.75);
+   box-shadow: -1px 4px 26px -10px rgba(0,0,0,0.75);
+   text-align: left;
+  }
+  h1{
+    text-align: center;
+    padding-bottom: 25px;
+  }
+</style>
+
+
+
+
+
+
+
+
+
+<div class="container-fluid bg">
+  <div class="row">
+    <div class="col-md-4 col-sm-4 col-xs-12"></div>
+    <div class="col-md-4 col-sm-4 col-xs-12">
+      <!--form start-->
+      <form class="form-container">
+        <h1>Admin Login</h1>
+        <div class="form-group">
+          <label for="exampleInputEmail1">User name</label>
+          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="">
+          <small id="emailHelp" class="form-text text-muted"><!--some text can go here--></small>
+        </div>
+        <div class="form-group">
+          <label for="exampleInputPassword1">Password</label>
+          <input type="password" class="form-control" id="exampleInputPassword1" placeholder="">
+        </div>
+        <div class="form-group form-check">
+          <input type="checkbox" class="form-check-input" id="exampleCheck1">
+          <label class="form-check-label" for="exampleCheck1">Remember me</label>
+        </div>
+        <button type="submit" class="btn btn-success btn-block">Log in</button>
+      </form>
+      <!--form end-->
     </div>
+    <div class="col-md-4 col-sm-4 col-xs-12"></div>
   </div>
 </div>
+
+
+
+
+
+
+<router-outlet></router-outlet>

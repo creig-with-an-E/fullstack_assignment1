@@ -18,8 +18,8 @@ mongoose.connect(`mongodb://${dbUser}:${dbPassword}@ds143340.mlab.com:43340/vide
 let db = mongoose.connect;
 
 //routes 
-var routes = require('./routes/index')
-var users = require('./routes/users')
+var routes = require('./routes/index');
+var users = require('./routes/users');
 
 //initializing the app
 const app = express();
