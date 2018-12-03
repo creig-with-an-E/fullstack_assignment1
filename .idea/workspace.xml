@@ -2,7 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e897f0e9-3642-44ea-ad4d-7f1f93420c59" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/videoStoreApp/src/app/adminlogin/adminlogin.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/videoStoreApp/src/app/adminlogin/adminlogin.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/videoStoreApp/src/app/app.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/videoStoreApp/src/app/app.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/videoStoreApp/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/videoStoreApp/src/app/app.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/videoStoreApp/src/app/customersadmin/customersadmin.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/videoStoreApp/src/app/customersadmin/customersadmin.component.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -16,11 +19,50 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="adminlogin.component.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="adminlogin.component.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/videoStoreApp/src/app/adminlogin/adminlogin.component.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="24" column="22" selection-start-line="24" selection-start-column="22" selection-end-line="24" selection-end-column="22" />
+            <state relative-caret-position="459">
+              <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="app.component.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/videoStoreApp/src/app/app.component.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="102">
+              <caret line="6" column="52" selection-start-line="6" selection-start-column="52" selection-end-line="6" selection-end-column="52" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="app.module.ts" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/videoStoreApp/src/app/app.module.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="340">
+              <caret line="23" column="67" selection-start-line="23" selection-start-column="67" selection-end-line="23" selection-end-column="67" />
+              <folding>
+                <element signature="e#0#58#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="reservevideoguest.component.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/videoStoreApp/src/app/reservevideoguest/reservevideoguest.component.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="51">
+              <caret line="3" column="31" selection-start-line="3" selection-start-column="31" selection-end-line="3" selection-end-column="31" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="customersadmin.component.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/videoStoreApp/src/app/customersadmin/customersadmin.component.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="17">
+              <caret line="1" column="17" selection-start-line="1" selection-start-column="17" selection-end-line="1" selection-end-column="17" />
             </state>
           </provider>
         </entry>
@@ -48,16 +90,16 @@
         <option value="$PROJECT_DIR$/app.js" />
         <option value="$PROJECT_DIR$/model/user.model.js" />
         <option value="$PROJECT_DIR$/server.js" />
-        <option value="$PROJECT_DIR$/videoStoreApp/src/app/app.component.html" />
-        <option value="$PROJECT_DIR$/videoStoreApp/src/app/app.module.ts" />
         <option value="$PROJECT_DIR$/videoStoreApp/src/app/videolistguest/videolistguest.component.html" />
         <option value="$PROJECT_DIR$/videoStoreApp/src/app/videolistadmin/videolistadmin.component.html" />
         <option value="$PROJECT_DIR$/videoStoreApp/src/app/updatevideoadmin/updatevideoadmin.component.html" />
         <option value="$PROJECT_DIR$/videoStoreApp/src/app/reservevideoguest/reservevideoguest.component.html" />
-        <option value="$PROJECT_DIR$/videoStoreApp/src/app/customersadmin/customersadmin.component.html" />
         <option value="$PROJECT_DIR$/videoStoreApp/src/app/addvideoadmin/addvideoadmin.component.html" />
         <option value="$PROJECT_DIR$/videoStoreApp/src/app/adminlogin/adminlogin.component.css" />
         <option value="$PROJECT_DIR$/videoStoreApp/src/app/adminlogin/adminlogin.component.html" />
+        <option value="$PROJECT_DIR$/videoStoreApp/src/app/app.component.html" />
+        <option value="$PROJECT_DIR$/videoStoreApp/src/app/customersadmin/customersadmin.component.html" />
+        <option value="$PROJECT_DIR$/videoStoreApp/src/app/app.module.ts" />
       </list>
     </option>
   </component>
@@ -84,7 +126,7 @@
       <path value="$PROJECT_DIR$/videoStoreApp/package.json" />
     </packageJsonPaths>
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="676" />
     <option name="width" value="697" />
     <option name="height" value="735" />
@@ -102,6 +144,48 @@
             <path>
               <item name="fullstack_assignment1" type="b2602c69:ProjectViewProjectNode" />
               <item name="fullstack_assignment1" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="fullstack_assignment1" type="b2602c69:ProjectViewProjectNode" />
+              <item name="fullstack_assignment1" type="462c0819:PsiDirectoryNode" />
+              <item name="videoStoreApp" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="fullstack_assignment1" type="b2602c69:ProjectViewProjectNode" />
+              <item name="fullstack_assignment1" type="462c0819:PsiDirectoryNode" />
+              <item name="videoStoreApp" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="fullstack_assignment1" type="b2602c69:ProjectViewProjectNode" />
+              <item name="fullstack_assignment1" type="462c0819:PsiDirectoryNode" />
+              <item name="videoStoreApp" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="fullstack_assignment1" type="b2602c69:ProjectViewProjectNode" />
+              <item name="fullstack_assignment1" type="462c0819:PsiDirectoryNode" />
+              <item name="videoStoreApp" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="addvideoadmin" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="fullstack_assignment1" type="b2602c69:ProjectViewProjectNode" />
+              <item name="fullstack_assignment1" type="462c0819:PsiDirectoryNode" />
+              <item name="videoStoreApp" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="customersadmin" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="fullstack_assignment1" type="b2602c69:ProjectViewProjectNode" />
+              <item name="fullstack_assignment1" type="462c0819:PsiDirectoryNode" />
+              <item name="videoStoreApp" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="reservevideoguest" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -164,26 +248,26 @@
       <workItem from="1543431254204" duration="17000" />
       <workItem from="1543433084980" duration="7000" />
       <workItem from="1543611195365" duration="18794000" />
-      <workItem from="1543722807540" duration="17712000" />
+      <workItem from="1543722807540" duration="20631000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="48725000" />
+    <option name="totallyTimeSpent" value="51644000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="676" y="0" width="697" height="735" extended-state="0" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TypeScript" order="7" weight="0.32838285" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.23216996" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18898809" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Terminal" order="7" visible="true" weight="0.22445561" />
+      <window_info anchor="bottom" id="Terminal" order="7" visible="true" weight="0.22112212" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -338,31 +422,10 @@
     <entry file="file://$PROJECT_DIR$/videoStoreApp/angular.json">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/videoStoreApp/src/app/reservevideoguest/reservevideoguest.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="31" selection-start-line="3" selection-start-column="31" selection-end-line="3" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/videoStoreApp/src/app/customersadmin/customersadmin.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="31" selection-start-line="3" selection-start-column="31" selection-end-line="3" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/videoStoreApp/src/app/addvideoadmin/addvideoadmin.component.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
           <caret line="3" column="31" selection-start-line="3" selection-start-column="31" selection-end-line="3" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/videoStoreApp/src/app/app.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" selection-start-line="1" selection-end-line="1" />
         </state>
       </provider>
     </entry>
@@ -394,16 +457,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/videoStoreApp/src/app/app.module.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="20" selection-start-line="17" selection-start-column="10" selection-end-line="17" selection-end-column="20" />
-          <folding>
-            <element signature="e#0#58#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/bg.jpg">
       <provider selected="true" editor-type-id="images" />
     </entry>
@@ -412,8 +465,39 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/videoStoreApp/src/app/adminlogin/adminlogin.component.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="24" column="22" selection-start-line="24" selection-start-column="22" selection-end-line="24" selection-end-column="22" />
+        <state relative-caret-position="459">
+          <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/videoStoreApp/src/app/reservevideoguest/reservevideoguest.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="31" selection-start-line="3" selection-start-column="31" selection-end-line="3" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/videoStoreApp/src/app/app.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="52" selection-start-line="6" selection-start-column="52" selection-end-line="6" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/videoStoreApp/src/app/customersadmin/customersadmin.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="17" selection-start-line="1" selection-start-column="17" selection-end-line="1" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/videoStoreApp/src/app/app.module.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="23" column="67" selection-start-line="23" selection-start-column="67" selection-end-line="23" selection-end-column="67" />
+          <folding>
+            <element signature="e#0#58#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
