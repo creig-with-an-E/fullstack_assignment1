@@ -28,7 +28,7 @@ const app = express();
 //this will be used for testing before integration with angular
 app.set('views', path.join(__dirname,'views'));
 app.engine('handlebars',exprhnbs({defaultLayout:'layout'}));    //this is where the pages will be injected
-app.set('view-engine','handlebars');
+app.set('view engine','handlebars');
 
 //body parser middle-ware
 app.use(bodyParser.json());
