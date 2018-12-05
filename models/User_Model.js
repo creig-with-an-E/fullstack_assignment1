@@ -1,13 +1,23 @@
 var mongoose = require('mongoose');
-var bcryt = require('bcryptjs');
+var UserSchema= mongoose.Schema;
 
-var User= mongoose.Schema;
+var bcrypt = require('bcryptjs');
 
-var newUser = new User({
-    username: {type: String},
-    password: {type: String},
-    firstName:{type :String},
-    lastName :{type:String},
+
+
+var newUser = new UserSchema({
+    firstname: {type: String},
+    lastname: {type: String},
+    password:{type :String},
+    email :{type:String},
 });
 
-var userObj = model.exports = mongoose.Schema('Users',newUser);
+var User = module.exports = mongoose.model('Users',newUser);
+module.exports.createUser=function(newUser, callback){
+    bcrypt.genSalt(10, function(err, salt) {
+        bcrypt.hash(newUser.password, salt, function(err, hash) {
+            newUser.password = hash;
+            newUser.save(callback)
+        });
+    });
+};
