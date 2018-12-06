@@ -22,3 +22,22 @@ module.exports.createUser=function(newUser, callback){
         });
     });
 };
+
+module.exports.getUserByName= function(username, callback){
+    var query ={ username :username};
+    User.findOne(query,callback);
+};
+
+module.exports.getUserById= function(id, callback){
+
+    User.findById(id,callback);
+};
+
+//used to compare the password, first of decrpting it
+
+module.exports.comparePassword = function(candidatePassword, hash ,callback){
+    bcrypt.compare(candidatePassword, hash, function(err, isMatch){
+        if(err) throw err;
+        callback(null, isMatch);
+    });
+};
