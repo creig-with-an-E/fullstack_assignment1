@@ -1,17 +1,28 @@
 const express =require('express');
 const users = express.Router();
+const passport = require("passport");
+const LocalStrategy = require('passport-local');
+
 
 const User = require('../models/User_Model');
 
 users.get('/login',(req, res)=>{
-    res.render('login')
+    res.render("login")
 });
+
+users.post('/login',
+    passport.authenticate('local',
+                                {   successRedirect: "/",
+                                    failureRedirect:"/users/login",
+                                    failureFlash:true
+                                }));
 
 users.get('/register',function(req,res){
     res.render('register');
 });
 
 users.post('/register',(req, res, next)=>{
+    var uname = req.body.uname;
     var name = req.body.fname;
     var email = req.body.email;
     var lastname = req.body.lname;
@@ -28,9 +39,10 @@ users.post('/register',(req, res, next)=>{
 
     }else {
         var newUser = new User({
+            username:uname,
             firstname: name,
-            email: email,
             lastname: lastname,
+            email: email,
             password: password
         });
         User.createUser(newUser, function (err, user) {

@@ -6,7 +6,7 @@ var bcrypt = require('bcryptjs');
 
 
 var newUser = new UserSchema({
-    usename :{type: String , index:true},
+    username :{type: String , index:true},
     firstname: {type: String},
     lastname: {type: String},
     password:{type :String},

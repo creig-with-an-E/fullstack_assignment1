@@ -14,7 +14,7 @@ var mongoose = require('mongoose');
 //creating mongoose connection
 var dbUser = 'admin';
 var dbPassword = 'admin123';
-mongoose.connect(`mongodb://${dbUser}:${dbPassword}@ds143340.mlab.com:43340/videostore`);
+mongoose.connect(`mongodb://${dbUser}:${dbPassword}@ds143340.mlab.com:43340/videostore`,{useNewUrlParser:true});
 let db = mongoose.connect;
 
 //routes 
