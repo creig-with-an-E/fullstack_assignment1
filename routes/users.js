@@ -87,4 +87,12 @@ passport.deserializeUser(function(id , done){
         }
 
     });
+
+    //logout route
+    users.get('/logout',function (req, res) {
+        req.logout();
+        req.flash('success_msg','you have logged out');
+        res.render('login')
+    });
+
 module.exports = users;

@@ -12,6 +12,25 @@
 </head>
 <body>
 
+ <div class="row">
+     <div class="col">
+         {{#if error}}
+             <div class="alert alert-danger">
+                 {{error}}
+             </div>
+         {{/if}}
+         {{#if error_msg}}
+             <div class="alert alert-danger">
+                 {{error_msg}}
+             </div>
+         {{/if}}
+         {{#if success_msg}}
+             <div class="alert alert-danger">
+                 {{success_msg}}
+             </div>
+         {{/if}}
+     </div>
+ </div>
     {{{body}}}
 </body>
 </html>
