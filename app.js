@@ -10,6 +10,8 @@ var passport = require('passport');
 var LocalStrategy = require('passport-local').Strategy;
 var mongo = require('mongodb');
 var mongoose = require('mongoose');
+var cors = require('cors');
+
 
 //creating mongoose connection
 var dbUser = 'admin';
@@ -23,6 +25,16 @@ var users = require('./routes/users');
 
 //initializing the app
 const app = express();
+
+
+//cors (cross-origin) setup
+var corsOptions ={
+    origin:'http://localhost:4200',
+    optionsSuccessStatus:200
+};
+
+app.use(cors(corsOptions));
+
 
 //setting the view engine
 //this will be used for testing before integration with angular
@@ -43,7 +55,7 @@ app.use(session({
     secret:'secret',
     saveUninitialized:true,
     resave: true
-}))
+}));
 
 //initializing passport
 app.use(passport.initialize());
