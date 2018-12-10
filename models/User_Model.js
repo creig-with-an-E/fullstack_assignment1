@@ -3,8 +3,6 @@ var UserSchema= mongoose.Schema;
 
 var bcrypt = require('bcryptjs');
 
-
-
 var newUser = new UserSchema({
     username :{type: String , index:true},
     firstname: {type: String},
@@ -32,6 +30,8 @@ module.exports.getUserById= function(id, callback){
 
     User.findById(id,callback);
 };
+
+
 
 //used to compare the password, first of decrpting it
 

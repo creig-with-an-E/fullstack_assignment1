@@ -18,6 +18,7 @@ const User = require('../models/User_Model');
         //local strategy is used to authenticate using username and password
 passport.use(new LocalStrategy(
     function(username, password, done) {
+        console.log("request reached")
         User.getUserByName(username,function(err,user){
             if(err){
                 throw err;

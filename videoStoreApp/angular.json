@@ -59,7 +59,8 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "videoStoreApp:build"
+            "browserTarget": "videoStoreApp:build",
+            "proxyConfig": "proxy.config.json"
           },
           "configurations": {
             "production": {

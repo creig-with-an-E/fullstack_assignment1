@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -12,7 +13,7 @@ import { UpdatevideoadminComponent } from './updatevideoadmin/updatevideoadmin.c
 import { CustomersadminComponent } from './customersadmin/customersadmin.component';
 import { VideolistguestComponent } from './videolistguest/videolistguest.component';
 import { ReservevideoguestComponent } from './reservevideoguest/reservevideoguest.component';
-
+import { LoginService } from './login.service'
 
 const routes: Routes = [
   {path: 'adminlogin', component: AdminloginComponent},
@@ -42,11 +43,12 @@ const routes: Routes = [
   ],
   imports: [
     BrowserModule,
+    HttpClientModule,
     AppRoutingModule,
     BsDropdownModule.forRoot(),
     RouterModule.forRoot(routes)
   ],
-  providers: [],
+  providers: [LoginService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
