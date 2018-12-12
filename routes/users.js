@@ -4,7 +4,9 @@ const passport = require("passport");
 const LocalStrategy = require('passport-local').Strategy;
 const User = require('../models/User_Model');
 
-
+    users.post("/",()=>{
+        console.log('nigga nigga')
+    });
 //login routes
     users.get('/login',(req, res)=>{
         res.render("login")

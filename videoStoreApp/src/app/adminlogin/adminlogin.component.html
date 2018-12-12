@@ -28,17 +28,11 @@
 
 
 
-
-
-
-
-
-
 <div class="container-fluid bg">
   <div class="row">
     <div class="col-md-4 offset-md-4 offset-sm-2 col-sm-8 col-xs-12">
       <!--form start-->
-      <form class="form-container" (submit)="loginUser($event)">
+      <form class="form-container" method="POST" (submit)="userLogin($event)">
         <h1>Admin Login</h1>
         <div class="form-group">
           <label for="exampleInputEmail1">User name</label>
@@ -59,9 +53,6 @@
     <div class="col-md-4 col-sm-4 col-xs-12"></div>
   </div>
 </div>
-
-
-
 
 
 
