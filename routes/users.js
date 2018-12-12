@@ -4,23 +4,21 @@ const passport = require("passport");
 const LocalStrategy = require('passport-local').Strategy;
 const User = require('../models/User_Model');
 
-    users.post("/",()=>{
-        console.log('nigga nigga')
-    });
+    
 //login routes
     users.get('/login',(req, res)=>{
         res.render("login")
     });
 
     users.post('/login',
-        passport.authenticate('local',{successRedirect:"/" ,failureRedirect:"/users/login",failureFlash:true}));
+        passport.authenticate('local',{successRedirect:"/" ,failureRedirect:"/",failureFlash:true}));
 
 
         //confirming that user exists and creating sessions
         //local strategy is used to authenticate using username and password
 passport.use(new LocalStrategy(
     function(username, password, done) {
-        console.log("request reached")
+        console.log("request reached users login route")
         User.getUserByName(username,function(err,user){
             if(err){
                 throw err;
@@ -85,10 +83,10 @@ passport.deserializeUser(function(id , done){
                 if (err) throw err;
                 console.log(user);
             });
+            console.log('this was reached');
             req.flash('success_msg', 'You are registered and can now login');
-            res.redirect('/users/login');
+            res.redirect('/api/users/login');
         }
-
     });
 
     //logout route

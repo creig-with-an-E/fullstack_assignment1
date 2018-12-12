@@ -92,11 +92,17 @@ app.use(function (req, res, next) {
 
 
 app.use('/api/', routes);
-app.use('/api/users', users);
+app.use('/api/users', users,()=>{
+    console.log("hitting api/users")
+});
 
 app.use("/", express.static(__dirname + "/videoStoreApp/dist/videoStoreApp"));
 
 app.get('/', (req, res) => {
+    res.sendFile("index.html", { root: __dirname + "/videoStoreApp/dist/videoStoreApp" });
+});
+app.post('/', (req, res) => {
+    console.log("localhost:3000/");
     res.sendFile("index.html", { root: __dirname + "/videoStoreApp/dist/videoStoreApp" });
 });
 

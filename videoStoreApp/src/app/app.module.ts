@@ -18,13 +18,13 @@ import { LoginService } from './login.service';
 import { AddVideoComponent } from './add-video/add-video.component'
 
 const routes: Routes = [
-  {path: 'adminlogin', component: AdminloginComponent},
-  {path: 'videolistadmin', component: VideolistadminComponent},
-  {path: 'addVideo', component: AddVideoComponent},
-  {path: 'updatevideoadmin', component: UpdatevideoadminComponent},
-  {path: 'customersadmin', component: CustomersadminComponent},
-  {path: 'videolistguest', component: VideolistguestComponent},
-  {path: 'reservevideoguest', component: ReservevideoguestComponent},
+  {path: '#adminlogin', component: AdminloginComponent},
+  {path: '#videolistadmin', component: VideolistadminComponent},
+  {path: '#addVideo', component: AddVideoComponent},
+  {path: '#updatevideoadmin', component: UpdatevideoadminComponent},
+  {path: '#customersadmin', component: CustomersadminComponent},
+  {path: '#videolistguest', component: VideolistguestComponent},
+  {path: '#reservevideoguest', component: ReservevideoguestComponent},
 
 
 

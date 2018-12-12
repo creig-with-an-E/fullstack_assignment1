@@ -11,6 +11,7 @@ var video = require('../models/videoModel');
 //        res.redirect('/users/login')
 //    }
 // }
+
 router.get('/dashboard',(req,res)=>{
     res.render('dashboard');
 });
