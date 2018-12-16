@@ -23,7 +23,7 @@ const routes: Routes = [
   {path: '#videolistadmin', component: VideolistadminComponent},
   {path: '#addVideo', component: AddVideoComponent},
   {path: '#updatevideoadmin', component: UpdatevideoadminComponent},
-  // {path: '#customersadmin', component: CustomersadminComponent},
+  // {path: '#customersadmin', component: CustomerComponent},
   {path: '#videolistguest', component: VideolistguestComponent},
   // {path: '#reservevideoguest', component: ReservevideoguestComponent},
   {path: '#customer', component: CustomerComponent},
