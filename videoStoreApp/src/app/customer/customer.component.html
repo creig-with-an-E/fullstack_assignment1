@@ -1,64 +1,52 @@
-<!-- <div class="row">
-  <div class="col-12">
-        <div class="row">
-          <div class="col-8">
-            <form #customerForm="ngForm" (ngSubmit)="onSubmit(customerForm)">
-              <input type="hidden" name="_id" #_id="ngModel" [(ngModel)]="customerService.selectedCustomer._id">
-              <div class="row">
-                <div class="form-group col-12">
-                  <input type="text" name="firstName" #name="ngModel" [(ngModel)]="customerService.selectedCustomer.firstName" placeholder="Enter full name" required>
-                  <label>First Name :
-                    <label class="red-text">*</label>
-                  </label>
-                </div>
-              </div>
-              <div class="row">
-                <div class="input-field col-12">
-                  <input type="text" name="lastName" #name="ngModel" [(ngModel)]="customerService.selectedCustomer.lastName" placeholder="enter last name">
-                  <label>Last Name:</label>
-                </div>
-              </div>
-              <div class="row">
-                <div class="input-field col-12">
-                  <input type="text" name="address" #name="ngModel" [(ngModel)]="customerService.selectedCustomer.address" placeholder="Enter address">
-                  <label>address</label>
-                </div>
-              </div>
-              <div class="row">
-                <div class="input-field col-12">
-                  <input type="text" name="city" #name="ngModel" [(ngModel)]="customerService.selectedCustomer.city" placeholder="enter address">
-                  <label>city :</label>
-                </div>
-              </div>
-              <div class="row">
-                <div class="input-field col-8">
-                  <button class="btn btn-custom right" type="button" (click)="resetForm(employeeForm)">Reset</button>
-                  <button class="btn btn-custom right" type="submit" [disabled]="!employeeForm.valid">Submit</button>
-                </div>
-              </div>
-            </form>
-          </div>
-was heare-->
-        <!-- </div>
-  </div>
-</div> --> 
+<div class="row offset-2 mt-5">
+  <table class="table col-8">
+    <thead class="thead-dark">
+    <tr>
+      <th>First Name :</th>
+      <th>Last Name</th>
+      <th>Address</th>
+      <th>City</th>
+      <th></th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let customer of customerService.customers">
+      <td>{{customer.firstName}}</td>
+      <td>{{customer.lastName}}</td>
+      <td>{{customer.address}}</td>
+      <td>{{customer.city}}</td>
+      <td>
+        <a class="action-btn" (click)="onEdit(emp)">
+          <i class="btn btn-link">edit</i>
+        </a>
+        <a class="action-btn" (click)="onDelete(emp._id,employeeForm)">
+          <i class="btn btn-link">delete</i>
+        </a>
+      </td>
+    </tr>
+    </tbody>
+  </table>
+</div>
+
+
+
 
 <div class="row">
     <form #customerForm="ngForm" (ngSubmit)="onSubmit(customerForm)" class="col-6 offset-3 mt-3">
         <input type="hidden" name="_id" #_id="ngModel" [(ngModel)]="customerService.selectedCustomer._id">
         <div class="form-group">
-          <label for="firstName">Username</label>
+          <label for="firstName" class="mr-2">Username</label>
            <input type="text" name="firstName" #name="ngModel" [(ngModel)]="customerService.selectedCustomer.firstName" placeholder="Enter full name" class="form-control mx-sm-3">
         </div>
         <div class="form-group">
-          <label for="inputPassword4">Last Name :</label>
+          <label for="inputPassword4" class="mr-2">Last Name :</label>
             <input type="text" name="lastName" #name="ngModel" [(ngModel)]="customerService.selectedCustomer.lastName" placeholder="enter last name" class="form-control mx-sm-3">
         </div>
         <div class="form-group">
-            <label for="address">Address :</label>
+            <label for="address" class="mr-2">Address :</label>
               <input type="text" name="address" #name="ngModel" [(ngModel)]="customerService.selectedCustomer.address" placeholder="Enter address" class="form-control mx-sm-3">
           </div>
-          <div class="form-group">
+          <div class="form-group" class="mr-2">
               <label for="address">Address :</label>
                 <input type="text" name="city" #name="ngModel" [(ngModel)]="customerService.selectedCustomer.city" placeholder="enter address" class="form-control mx-sm-3">
           </div>
@@ -70,49 +58,46 @@ was heare-->
                   <button class="btn btn-primary" type="submit" [disabled]="!employeeForm.valid">Submit</button>
                 </div>
             </div>
-    </form> 
+    </form>
 </div>
 
 
 
-<hr/>
-<div class="row">
-    <div class="col-8">
-      <div class="card">
-        <div class="card-content white-text">
-          <div class="row">
-              <div class="col-8">
-                  <table class="responsive-table highlight">
-                      <thead>
-                        <tr>
-                          <th>First Name :</th>
-                          <th>Last Name</th>
-                          <th>Address</th>
-                          <th>City</th>
-                          <th></th>
-                        </tr>
-                      </thead>
-                      <tr *ngFor="let customer of customerService.customers">
-                        <td>{{customer.firstName}}</td>
-                        <td>{{customer.lastName}}</td>
-                        <td>{{customer.address}}</td>
-                        <td>{{customer.city}}</td>
-                        <td>
-                            <a class="action-btn" (click)="onEdit(emp)">
-                              <i class="material-icons">edit</i>
-                            </a>
-                            <a class="action-btn" (click)="onDelete(emp._id,employeeForm)">
-                              <i class="material-icons">delete</i>
-                            </a>
-                          </td>
-                      </tr>
-                    </table>
-              </div>
-  <!--was heare-->
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
+<!--<div class="row">-->
+    <!--<div class="col-8">-->
+      <!--<div class="card">-->
+        <!--<div class="card-content white-text">-->
+          <!--<div class="row">-->
+              <!--<div class="col-8">-->
+                  <!--<table class="responsive-table highlight">-->
+                      <!--<thead>-->
+                        <!--<tr>-->
+                          <!--<th>First Name :</th>-->
+                          <!--<th>Last Name</th>-->
+                          <!--<th>Address</th>-->
+                          <!--<th>City</th>-->
+                          <!--<th></th>-->
+                        <!--</tr>-->
+                      <!--</thead>-->
+                      <!--<tr *ngFor="let customer of customerService.customers">-->
+                        <!--<td>{{customer.firstName}}</td>-->
+                        <!--<td>{{customer.lastName}}</td>-->
+                        <!--<td>{{customer.address}}</td>-->
+                        <!--<td>{{customer.city}}</td>-->
+                        <!--<td>-->
+                            <!--<a class="action-btn" (click)="onEdit(emp)">-->
+                              <!--<i class="material-icons">edit</i>-->
+                            <!--</a>-->
+                            <!--<a class="action-btn" (click)="onDelete(emp._id,employeeForm)">-->
+                              <!--<i class="material-icons">delete</i>-->
+                            <!--</a>-->
+                          <!--</td>-->
+                      <!--</tr>-->
+                    <!--</table>-->
+              <!--</div>-->
+          <!--</div>-->
+        <!--</div>-->
+      <!--</div>-->
+    <!--</div>-->
+  <!--</div>-->
 
