@@ -5,3 +5,8 @@ The application runs on localhost:3000 and the localhost:4200 for angular.
 The project is in two directories. \n
   1.nodejs - which contains the entire backend
   2. angular. which has the angular view
+
+
+authors:
+Fortune Creig Phiri
+Sherwayne Walrond
