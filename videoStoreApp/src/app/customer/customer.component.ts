@@ -52,4 +52,16 @@ refreshCustomer() {
 onEdit(cust: Customer) {
   this.customerService.selectedCustomer = cust;
 }
+
+  onDelete(_id: string, form: NgForm) {
+    if (confirm('Are you sure to delete this record ?') == true) {
+      this.customerService.deleteCustomer(_id).subscribe((res) => {
+        this.refreshCustomer();
+        this.resetForm(form);
+        M.toast({ html: 'Deleted successfully', classes: 'rounded' });
+      });
+    }
+  }
 }
+
+

@@ -1,0 +1,29 @@
+<div class="row">
+  <form #customerForm="ngForm" (ngSubmit)="onSubmit(customerForm)" class="col-6 offset-3 mt-3">
+    <input type="hidden" name="_id" #_id="ngModel" [(ngModel)]="customerService.selectedCustomer._id">
+    <div class="form-group">
+      <label for="firstName" class="mr-2">Username</label>
+      <input type="text" name="firstName" #name="ngModel" [(ngModel)]="customerService.selectedCustomer.firstName" placeholder="Enter full name" class="form-control mx-sm-3">
+    </div>
+    <div class="form-group">
+      <label for="inputPassword4" class="mr-2">Last Name :</label>
+      <input type="text" name="lastName" #name="ngModel" [(ngModel)]="customerService.selectedCustomer.lastName" placeholder="enter last name" class="form-control mx-sm-3">
+    </div>
+    <div class="form-group">
+      <label for="address" class="mr-2">Address :</label>
+      <input type="text" name="address" #name="ngModel" [(ngModel)]="customerService.selectedCustomer.address" placeholder="Enter address" class="form-control mx-sm-3">
+    </div>
+    <div class="form-group" class="mr-2">
+      <label for="address">Address :</label>
+      <input type="text" name="city" #name="ngModel" [(ngModel)]="customerService.selectedCustomer.city" placeholder="enter address" class="form-control mx-sm-3">
+    </div>
+    <div class="row offset-2">
+      <div class="col-4">
+        <button class="btn btn-warning" type="button" (click)="resetForm(customerForm)">Reset</button>
+      </div>
+      <div class="col-4 ">
+        <button class="btn btn-primary" type="submit" [disabled]="!customerForm.valid">Submit</button>
+      </div>
+    </div>
+  </form>
+</div>

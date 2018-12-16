@@ -11,13 +11,13 @@ import { Routes, RouterModule} from "@angular/router";
 import { LoginService } from './login.service';
 import { AddVideoComponent } from './add-video/add-video.component';
 import { CustomerComponent } from './customer/customer.component';
-import { LoginComponent } from './login/login.component'
+import { LoginComponent } from './login/login.component';
+import { AddCustomerComponent } from './add-customer/add-customer.component'
 
 const routes: Routes = [
   {path: '#login', component: LoginComponent},
   {path: '#addVideo', component: AddVideoComponent},
-  // {path: '#customersadmin', component: CustomersadminComponent},
-  // {path: '#reservevideoguest', component: ReservevideoguestComponent},
+  {path:'#addCust',component:AddCustomerComponent},
   {path: '#customer', component: CustomerComponent},
 ];
 
@@ -26,7 +26,8 @@ const routes: Routes = [
     AppComponent,
     AddVideoComponent,
     CustomerComponent,
-    LoginComponent
+    LoginComponent,
+    AddCustomerComponent
 
   ],
   imports: [
