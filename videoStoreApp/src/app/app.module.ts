@@ -13,12 +13,14 @@ import { AddVideoComponent } from './add-video/add-video.component';
 import { CustomerComponent } from './customer/customer.component';
 import { LoginComponent } from './login/login.component';
 import { AddCustomerComponent } from './add-customer/add-customer.component'
+import {VideosComponent} from "./videos/videos.component";
 
 const routes: Routes = [
   {path: '#login', component: LoginComponent},
-  {path: '#addVideo', component: AddVideoComponent},
+  {path: '#addvideo', component: AddVideoComponent},
   {path:'#addCust',component:AddCustomerComponent},
   {path: '#customer', component: CustomerComponent},
+  {path: '#videos', component: VideosComponent},
 ];
 
 @NgModule({
@@ -27,7 +29,8 @@ const routes: Routes = [
     AddVideoComponent,
     CustomerComponent,
     LoginComponent,
-    AddCustomerComponent
+    AddCustomerComponent,
+    VideosComponent
 
   ],
   imports: [
