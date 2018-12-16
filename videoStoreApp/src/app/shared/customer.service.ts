@@ -17,7 +17,6 @@ export class CustomerService {
   }
 
   getCustomerList(){
-    console.log('method is called ****');
     return this.http.get(this.baseURL+"/user")
   };
 
