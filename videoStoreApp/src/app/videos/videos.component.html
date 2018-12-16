@@ -1,0 +1,31 @@
+<div class="row offset-2 mt-5">
+  <table class="table col-8">
+    <thead class="thead-dark">
+    <tr>
+      <th>Title :</th>
+      <th>Director :</th>
+      <th>Run time :</th>
+      <th>Genre :</th>
+      <th>Rating :</th>
+      <th></th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let video of videoService.video">
+      <td>{{video.title}}</td>
+      <td>{{video.director}}</td>
+      <td>{{video.runtime}}</td>
+      <td>{{video.genre}}</td>
+      <td>{{video.rating}}</td>
+      <td>
+        <a class="action-btn" (click)="onEdit(vide)">
+          <i class="btn btn-link">edit</i>
+        </a>
+        <a class="action-btn" (click)="onDelete(video._id,employeeForm)">
+          <i class="btn btn-link">delete</i>
+        </a>
+      </td>
+    </tr>
+    </tbody>
+  </table>
+</div>
