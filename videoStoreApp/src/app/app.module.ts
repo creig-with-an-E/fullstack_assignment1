@@ -11,24 +11,22 @@ import { Routes, RouterModule} from "@angular/router";
 import { AdminloginComponent } from './adminlogin/adminlogin.component';
 import { VideolistadminComponent } from './videolistadmin/videolistadmin.component';
 import { UpdatevideoadminComponent } from './updatevideoadmin/updatevideoadmin.component';
-import { CustomersadminComponent } from './customersadmin/customersadmin.component';
+// import { CustomersadminComponent } from './customersadmin/customersadmin.component';
 import { VideolistguestComponent } from './videolistguest/videolistguest.component';
-import { ReservevideoguestComponent } from './reservevideoguest/reservevideoguest.component';
+// import { ReservevideoguestComponent } from './reservevideoguest/reservevideoguest.component';
 import { LoginService } from './login.service';
-import { AddVideoComponent } from './add-video/add-video.component'
+import { AddVideoComponent } from './add-video/add-video.component';
+import { CustomerComponent } from './customer/customer.component'
 
 const routes: Routes = [
   {path: '#adminlogin', component: AdminloginComponent},
   {path: '#videolistadmin', component: VideolistadminComponent},
   {path: '#addVideo', component: AddVideoComponent},
   {path: '#updatevideoadmin', component: UpdatevideoadminComponent},
-  {path: '#customersadmin', component: CustomersadminComponent},
+  // {path: '#customersadmin', component: CustomersadminComponent},
   {path: '#videolistguest', component: VideolistguestComponent},
-  {path: '#reservevideoguest', component: ReservevideoguestComponent},
-
-
-
-
+  // {path: '#reservevideoguest', component: ReservevideoguestComponent},
+  {path: '#customer', component: CustomerComponent},
 ];
 
 @NgModule({
@@ -37,10 +35,11 @@ const routes: Routes = [
     AdminloginComponent,
     VideolistadminComponent,
     UpdatevideoadminComponent,
-    CustomersadminComponent,
+    // CustomersadminComponent,
     VideolistguestComponent,
-    ReservevideoguestComponent,
-    AddVideoComponent
+    // ReservevideoguestComponent,
+    AddVideoComponent,
+    CustomerComponent
 
   ],
   imports: [
